@@ -1,0 +1,486 @@
+.bubles {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 10vh;
+}
+
+.buble-about-1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    animation: buble-1 infinite 5s 5s;
+}
+
+.buble-about-2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    top: 40px;
+    animation: buble-2 infinite 5s 10s;
+}
+
+.buble-about-3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 100px;
+    top: 30px;
+    animation: buble-3 infinite 5s 15s;
+}
+
+.buble-about-4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 225px;
+    top: 23px;
+    animation: buble-4 infinite 5s 20s;
+}
+
+.buble-about-5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 188px;
+    top: 40px;
+    animation: buble-5 infinite 5s 25s;
+}
+
+.buble-about-6 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 140px;
+    top: 60px;
+    animation: buble-6 infinite 5s 30s;
+}
+
+.buble-about-7 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 290px;
+    top: 65px;
+    animation: buble-7 infinite 5s 20s;
+}
+
+.buble-about-8 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 28px;
+    top: 45px;
+    animation: buble-8 infinite 5s 25s;
+}
+
+.buble-about-9 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 170px;
+    top: 100px;
+    animation: buble-9 infinite 5s 30s;
+}
+
+.buble-about-10 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 245px;
+    top: 95px;
+    animation: buble-10 infinite 5s 20s;
+}
+
+.buble-about-11 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 275px;
+    top: 80px;
+    animation: buble-11 infinite 5s 25s;
+}
+
+.buble-about-12 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 140px;
+    top: 80px;
+    animation: buble-12 infinite 5s 30s;
+}
+
+  @keyframes buble-1 {
+      5% {
+          background-color: #00beef;
+      }
+  }
+
+  @keyframes buble-2 {
+      10% {
+          background-color: #ef00cb;
+      }
+  }
+
+  @keyframes buble-3 {
+      15% {
+          background-color: #00ef64;
+      }
+  }
+
+  @keyframes buble-4 {
+      20% {
+          background-color: #ef1c00;
+      }
+  }
+
+  @keyframes buble-5 {
+      25% {
+          background-color: #c014ff;
+      }
+  }
+
+  @keyframes buble-6 {
+      30% {
+          background-color: #d3ef00;
+      }
+  }
+
+  @keyframes buble-7 {
+      35% {
+          background-color: #d77039;
+      }
+  }
+
+  @keyframes buble-8 {
+      40% {
+          background-color: #5798ed;
+      }
+  }
+
+  @keyframes buble-9 {
+      45% {
+          background-color: #f54c6b;
+      }
+  }
+
+  @keyframes buble-10 {
+      50% {
+          background-color: #60ff6d;
+      }
+  }
+
+  @keyframes buble-11 {
+      55% {
+          background-color: #00beef;
+      }
+  }
+
+  @keyframes buble-12 {
+      60% {
+          background-color: #ef00cb;
+      }
+  }
+
+  @keyframes buble-13 {
+      65% {
+          background-color: #00ef64;
+      }
+  }
+
+  @keyframes buble-14 {
+      70% {
+          background-color: #ef1c00;
+      }
+  }
+
+  @keyframes buble-15 {
+      75% {
+          background-color: #c014ff;
+      }
+  }
+
+  @keyframes buble-16 {
+      80% {
+          background-color: #d3ef00;
+      }
+  }
+
+  @keyframes buble-17 {
+      85% {
+          background-color: #d77039;
+      }
+  }
+
+  @keyframes buble-18 {
+      90% {
+          background-color: #5798ed;
+      }
+  }
+
+  @keyframes buble-19 {
+      91% {
+          background-color: #f54c6b;
+      }
+  }
+
+  @keyframes buble-20 {
+      92% {
+          background-color: #60ff6d;
+      }
+  }
+
+  @keyframes buble-21 {
+      93% {
+          background-color: #00beef;
+      }
+  }
+
+  @keyframes buble-22 {
+      94% {
+          background-color: #ef00cb;
+      }
+  }
+
+  @keyframes buble-23 {
+      95% {
+          background-color: #00ef64;
+      }
+  }
+
+  @keyframes buble-24 {
+      96% {
+          background-color: #ef1c00;
+      }
+  }
+
+  @keyframes buble-25 {
+      97% {
+          background-color: #c014ff;
+      }
+  }
+
+  @keyframes buble-26 {
+      98% {
+          background-color: #d3ef00;
+      }
+  }
+
+  @keyframes buble-27 {
+      99% {
+          background-color: #d77039;
+      }
+  }
+
+  @keyframes buble-28 {
+      100% {
+          background-color: #5798ed;
+      }
+  }
+
+  @keyframes buble-29 {
+      15% {
+          background-color: #f54c6b;
+      }
+  }
+
+  @keyframes buble-30 {
+      30% {
+          background-color: #0c5512;
+      }
+  }
+
+  @keyframes buble-31 {
+      45% {
+          background-color: #5f2709;
+      }
+  }
+
+  @keyframes buble-32 {
+      55% {
+          background-color: #083064;
+      }
+  }
+
+  @keyframes buble-33 {
+      65% {
+          background-color: #520a18;
+      }
+  }
+
+  @keyframes buble-34 {
+      80% {
+          background-color: #0c6314;
+      }
+  }
+
+  /* Bubles End */
+
+/* Pop-up Start*/
+
+.pop-cont {
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation: popup forwards 2s;
+    opacity: 1;
+    margin: 0 auto;
+    margin-left: -20px;
+    overflow: hidden;
+    border-radius: 5px;
+    /* background-color: #000; */
+}
+
+@keyframes popup {
+    0% {
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        /* margin-top: -700px; */
+        /* position: absolute; */
+    }
+}
+
+.popup {
+    /* border: 5px solid rgb(0, 0, 0); */
+    box-shadow: 1px 1px 21px #00000056;
+    background-color: #00bfef;
+    width: 60%;
+    margin-left: -20px;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    }
+
+.pop-button button {
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.349);
+    font-size: 25px;
+    font-weight: 700;
+    z-index: 3;
+    top: 2%;
+    right: 1%;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: #747474;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pop-button button:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+#pop-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: #000000 3px solid; */
+    background-color: white;
+    height: 6vw;
+}
+
+#pop-h h1 {
+    padding: 10px;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: Arial;
+}
+
+.pop-inputs {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.pop-inputs div {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.pop-inputs div label {
+    padding: 10px;
+    width: 9vw;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pop-inputs div input {
+    width: 150px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 50%;
+    border: none;
+    border: 2px solid rgb(235, 235, 235);
+    transition: box-shadow 1s;
+}
+
+.pop-inputs div input:focus {
+    box-shadow: 0px 1px 15px #0000008c;
+    border-radius: 1%;
+    outline: none;
+}
+
+.pop-sub-cont {
+    margin-left: 31.5%;
+}
+
+#pop-sub {
+    padding: 10px;
+    width: 150px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s background-color;
+    font-size: 15px;
+    border: none;
+    border: 2px solid rgb(194, 193, 193);
+}
+
+#pop-sub a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#pop-sub:hover {
+    background-color: #00000027;
+}
+
+/*Pop-up End */
+
+
+#linktohome{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+    border: 3px solid black;
+    padding: 3vw;
+}

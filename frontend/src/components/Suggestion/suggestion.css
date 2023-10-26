@@ -1,0 +1,718 @@
+.buble-about-1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    animation: buble-1 infinite 5s 5s;
+}
+
+.buble-about-2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    top: 40px;
+    animation: buble-2 infinite 5s 10s;
+}
+
+.buble-about-3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 100px;
+    top: 30px;
+    animation: buble-3 infinite 5s 15s;
+}
+
+.buble-about-4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 225px;
+    top: 23px;
+    animation: buble-4 infinite 5s 20s;
+}
+
+.buble-about-5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 188px;
+    top: 40px;
+    animation: buble-5 infinite 5s 25s;
+}
+
+.buble-about-6 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 140px;
+    top: 60px;
+    animation: buble-6 infinite 5s 30s;
+}
+
+.buble-about-7 {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 290px;
+    top: 65px;
+    animation: buble-7 infinite 5s 20s;
+}
+
+.buble-about-8 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 28px;
+    top: 45px;
+    animation: buble-8 infinite 5s 25s;
+}
+
+.buble-about-9 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 170px;
+    top: 100px;
+    animation: buble-9 infinite 5s 30s;
+}
+
+.buble-about-10 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 245px;
+    top: 95px;
+    animation: buble-10 infinite 5s 20s;
+}
+
+.buble-about-11 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 275px;
+    top: 80px;
+    animation: buble-11 infinite 5s 25s;
+}
+
+.buble-about-12 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 140px;
+    top: 80px;
+    animation: buble-12 infinite 5s 30s;
+}
+
+.bubles {
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 10vh;
+  }
+  .buble-1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    animation: buble-1 infinite 5s 5s;
+  }
+  .buble-2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 10px;
+    top: 40px;
+    animation: buble-2 infinite 5s 10s;
+  }
+  .buble-3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 60px;
+    top: 20px;
+    animation: buble-3 infinite 5s 15s;
+  }
+  .buble-4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 225px;
+    top: 23px;
+    animation: buble-4 infinite 5s 20s;
+  }
+  .buble-5 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 78px;
+    top: 88px;
+    animation: buble-5 infinite 5s 25s;
+  }
+  .buble-6 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 140px;
+    top: 60px;
+    animation: buble-6 infinite 5s 30s;
+  }
+  .buble-7 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    right: 170px;
+    top: 86px;
+    animation: buble-7 infinite 5s 35s;
+  }
+  .buble-8 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 100px;
+    top: 165px;
+    animation: buble-8 infinite 5s 40s;
+  }
+  .buble-9 {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 300px;
+    top: 24px;
+    animation: buble-9 infinite 5s 45s;
+  }
+  .buble-10 {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    right: 23px;
+    top: 128px;
+    animation: buble-10 infinite 5s 50s;
+  }
+  .buble-11 {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    right: 15px;
+    top: 190px;
+    animation: buble-11 infinite 5s 55s;
+  }
+  .buble-12 {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    right: 220px;
+    top: 42px;
+    animation: buble-12 infinite 5s 60s;
+  }
+  .buble-13 {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    right: 108px;
+    top: 23px;
+    animation: buble-13 infinite 5s 65s;
+  }
+  .buble-14 {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    right: 170px;
+    top: 20px;
+    animation: buble-14 infinite 5s 70s;
+  }
+  .buble-15 {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    right: 160px;
+    top: 130px;
+    animation: buble-15 infinite 5s 75s;
+  }
+  .buble-16 {
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    right: 285px;
+    top: 100px;
+    animation: buble-16 infinite 5s 80s;
+  }
+  .buble-17 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 250px;
+    top: 130px;
+    animation: buble-17 infinite 5s 85s;
+  }
+  .buble-18 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    right: 70px;
+    top: 210px;
+    animation: buble-18 infinite 5s 90s;
+  }
+  .buble-19 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: 260px;
+    top: 170px;
+    animation: buble-19 infinite 5s 95s;
+  }
+  .buble-20 {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 170px;
+    top: 220px;
+    animation: buble-20 infinite 5s 100s;
+  }
+  .buble-21 {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 370px;
+    top: 60px;
+    animation: buble-21 infinite 5s 105s;
+  }
+  .buble-22 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 45px;
+    top: 270px;
+    animation: buble-22 infinite 5s 110s;
+  }
+  .buble-23 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    right: 130px;
+    top: 270px;
+    animation: buble-23 infinite 5s 115s;
+  }
+  .buble-24 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 260px;
+    top: 230px;
+    animation: buble-24 infinite 5s 120s;
+  }
+  .buble-25 {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 330px;
+    top: 150px;
+    animation: buble-25 infinite 5s 125s;
+  }
+  .buble-26 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 230px;
+    top: 280px;
+    animation: buble-26 infinite 5s 130s;
+  }
+  .buble-27 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 300px;
+    top: 200px;
+    animation: buble-27 infinite 5s 135s;
+  }
+  .buble-28 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 380px;
+    top: 100px;
+    animation: buble-28 infinite 5s 140s;
+  }
+  .buble-29 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 330px;
+    top: 260px;
+    animation: buble-29 infinite 5s 145s;
+  }
+  .buble-30 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 376px;
+    top: 180px;
+    animation: buble-30 infinite 5s 150s;
+  }
+  
+  .buble-31 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 440px;
+    top: 35px;
+    animation: buble-31 infinite 5s 155s;
+  }
+  .buble-32 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 440px;
+    top: 135px;
+    animation: buble-32 infinite 5s 160s;
+  }
+  .buble-33 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 270px;
+    top: 350px;
+    animation: buble-33 infinite 5s 165s;
+  }
+  .buble-34 {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: 90px;
+    top: 330px;
+    animation: buble-34 infinite 5s 170s;
+  }
+  
+  @keyframes buble-1 {
+    5% {
+      background-color: #00beef;
+    }
+  }
+  @keyframes buble-2 {
+    10% {
+      background-color: #ef00cb;
+    }
+  }
+  @keyframes buble-3 {
+    15% {
+      background-color: #00ef64;
+    }
+  }
+  @keyframes buble-4 {
+    20% {
+      background-color: #ef1c00;
+    }
+  }
+  @keyframes buble-5 {
+    25% {
+      background-color: #c014ff;
+    }
+  }
+  @keyframes buble-6 {
+    30% {
+      background-color: #d3ef00;
+    }
+  }
+  @keyframes buble-7 {
+    35% {
+      background-color: #d77039;
+    }
+  }
+  @keyframes buble-8 {
+    40% {
+      background-color: #5798ed;
+    }
+  }
+  @keyframes buble-9 {
+    45% {
+      background-color: #f54c6b;
+    }
+  }
+  @keyframes buble-10 {
+    50% {
+      background-color: #60ff6d;
+    }
+  }
+  @keyframes buble-11 {
+    55% {
+      background-color: #00beef;
+    }
+  }
+  @keyframes buble-12 {
+    60% {
+      background-color: #ef00cb;
+    }
+  }
+  @keyframes buble-13 {
+    65% {
+      background-color: #00ef64;
+    }
+  }
+  @keyframes buble-14 {
+    70% {
+      background-color: #ef1c00;
+    }
+  }
+  @keyframes buble-15 {
+    75% {
+      background-color: #c014ff;
+    }
+  }
+  @keyframes buble-16 {
+    80% {
+      background-color: #d3ef00;
+    }
+  }
+  @keyframes buble-17 {
+    85% {
+      background-color: #d77039;
+    }
+  }
+  @keyframes buble-18 {
+    90% {
+      background-color: #5798ed;
+    }
+  }
+  @keyframes buble-19 {
+    91% {
+      background-color: #f54c6b;
+    }
+  }
+  @keyframes buble-20 {
+    92% {
+      background-color: #60ff6d;
+    }
+  }
+  @keyframes buble-21 {
+    93% {
+      background-color: #00beef;
+    }
+  }
+  @keyframes buble-22 {
+    94% {
+      background-color: #ef00cb;
+    }
+  }
+  @keyframes buble-23 {
+    95% {
+      background-color: #00ef64;
+    }
+  }
+  @keyframes buble-24 {
+    96% {
+      background-color: #ef1c00;
+    }
+  }
+  @keyframes buble-25 {
+    97% {
+      background-color: #c014ff;
+    }
+  }
+  @keyframes buble-26 {
+    98% {
+      background-color: #d3ef00;
+    }
+  }
+  @keyframes buble-27 {
+    99% {
+      background-color: #d77039;
+    }
+  }
+  @keyframes buble-28 {
+    100% {
+      background-color: #5798ed;
+    }
+  }
+  @keyframes buble-29 {
+    15% {
+      background-color: #f54c6b;
+    }
+  }
+  @keyframes buble-30 {
+    30% {
+      background-color: #0c5512;
+    }
+  }
+  @keyframes buble-31 {
+    45% {
+      background-color: #5f2709;
+    }
+  }
+  @keyframes buble-32 {
+    55% {
+      background-color: #083064;
+    }
+  }
+  @keyframes buble-33 {
+    65% {
+      background-color: #520a18;
+    }
+  }
+  @keyframes buble-34 {
+    80% {
+      background-color: #0c6314;
+    }
+  }
+  /* Bubles End */
+.abouth1::first-letter {
+  color: #00beef;
+}
+.abouth1{
+  margin-top: 7.9vw;
+  text-align: center;
+  font-size: 35px;
+  text-decoration-line: underline;
+  }
+
+.suggBox {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    /* overflow-x: scroll; */
+}
+
+.suggCont h1::first-letter{
+  color: #ef00cb;
+}
+
+.suggCont h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vw;
+  font-size: 30px;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.suggBox div {
+    text-align: center;
+    margin-left: 50px;
+    width: 27%;
+    /* border: 1px solid rgba(0, 0, 0, 0.201); */
+    box-shadow: 2px 4px 12px #00000036;
+    /* box-shadow: 1px 2px 6px; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 100%;
+    border-radius: 1%;
+    transition: 0.1s box-shadow;
+    transition: 0.5s margin;
+    /* transition: 0.5s transform; */
+    animation: boxes 3s forwards;
+    cursor: pointer;
+}
+
+.suggBox div:hover {
+    box-shadow: 0.1px 0.1px 8px;
+    margin-top: 7px;
+    /* transform: scale(1.07); */
+}
+
+@keyframes boxes {
+    0% {
+        opacity: 0;
+        margin: -500;
+        width: 0%;
+        margin-left: -500px;
+    }
+}
+
+.suggBox img {
+    width: 100%;
+    padding: 0;
+    height: 18vw;
+}
+
+.suggBox h3 {
+    margin-top: 10px;
+    color: #000;
+    height: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 23px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+.suggBox h5 {
+    font-size: 18px;
+    font-weight: 100;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0000004d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 15px;
+}
+
+.suggBox p {
+    color: #0000009d;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    margin: 16px;
+    margin-bottom: 10px;
+    height: 20vh;
+    overflow-y:auto;
+    line-height: 24px;
+    /* letter-spacing: 2px; */
+}
+
+.addBox {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#suggImg {
+    height: 55vh;
+    opacity: 50%;
+}
+
+#suggADD {
+    position: absolute;
+    top: 0%;
+    left: 10px;
+    z-index: 5;
+    text-align: center;
+    margin: 50px 22vw;
+}
+
+#suggADD h1 {
+    /* border: 1px solid black; */
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#suggADD h3 {
+    font-size: 27px;
+    color: #000000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
+
+#suggADD button {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border: 2px solid black;
+    background-color: none;
+    background-color: #00000087;
+    color: white;
+}
+
+#suggADD button:hover {
+    background-color: #000000a6;
+    cursor: pointer;
+}
