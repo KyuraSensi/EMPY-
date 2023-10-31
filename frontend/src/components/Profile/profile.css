@@ -1,0 +1,140 @@
+/* *{position: relative;} */
+
+.profilePopUpCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profilePopUp {
+    position: relative;
+    margin-top: 6vw;
+    padding: 35px 50px;
+    width: 80%;
+    /* border: 1px solid black; */
+    /* box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.396); */
+    background-color: #00beef;
+    height: 29.5vw;
+}
+.profilePopUp:hover {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.396);
+}
+
+.profileIco{
+    /* position: absolute; */
+    /* top: -30; */
+    /* left: 50%; */
+    text-align: center;
+    color: white;
+    margin-top: -49px;
+}
+
+.profileH1{
+    /* display: flex; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    /* border: black 1px solid; */
+    text-align: center;
+    color: white;
+}
+.profileH1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2vw 0;
+    color: white;
+    padding: .2vw .5vw;
+}
+
+.profileH1 div h2{
+    width: 50%;
+    text-align: start;
+    font-weight: 500;
+    align-items: center;
+}
+.profileH1 div span {
+    text-align:start;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    border-left: 2px solid white;
+    padding: .5vw .7vw;
+    font-size: 18px;
+    font-weight: 700;
+    width: 50%;
+    color: black;
+}
+.profileH1 div input {
+    text-align: start;
+    width: 50%;
+    padding: 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    width: 50%;
+    border: none;
+    outline: none;
+    color: #1d1b1b;
+}
+.profileH1  button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 3vw;
+}
+
+.profileBtn{
+    text-align: end;
+}
+
+.profileBtn button {
+    height: 50px;
+    width: 50px;
+    background-color: #00beef;
+    border: navajowhite;
+    text-align: end;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.profileBtn button svg{ 
+    border: none;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* .profileBtn button:hover {
+    
+} */
+
+/* .profileH1 span{
+} */
+/* // Profile Button  */
+
+
+.profileButton {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #000000;
+    z-index: 45673445678;
+}

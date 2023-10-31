@@ -303,8 +303,10 @@
 .input1{
     width: 30vw;
     padding: .5vw .5vw;
-    font-size: 1.5vw;
-    border: 3px solid black;
+    font-size: 2vw;
+    width: 100%;
+    margin: .1vw 0;
+    border: none;
 }
 .input1:focus{
     border: 3px solid #00beef;
@@ -437,4 +439,15 @@
 .noCom span{
     text-decoration: underline;
 }
+
+.form div{
+    display: flex;
+    align-items: center;
+}
+
+.form div input:focus {
+    border: none;
+    outline: none;
+}
 /* About Page: End */
+

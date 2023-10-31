@@ -854,8 +854,8 @@
     margin: 40px;
     width: 50%;
     height: 80vh;
-    background-image:
-        url("public/_.gif");
+    /* background-image:
+        url("public/_.gif"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -973,10 +973,10 @@
 .graphic-1 {
     margin: 40px;
     width: 50%;
+    height: 80vh;
     overflow: hidden;
-    height: 65vh;
-    background-image:
-        url("public/REALITY IN MOTION POSTER.gif");
+    /* background-image:
+        url("public/REALITY IN MOTION POSTER.gif"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1036,9 +1036,9 @@
 .VA-1 {
     margin: 40px;
     width: 50%;
-    height: 88vh;
-    background-image:
-        url("public/Kids See Ghosts - We All See Ghosts.jpeg");
+    height: 80vh;
+    /* background-image:
+        url("public/Kids See Ghosts - We All See Ghosts.jpeg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1441,6 +1441,7 @@
     position: fixed;
     bottom: 0;
     height: 3.5vw;
+    z-index: 4567865432456783;
 }
 
 .ads button {
@@ -1457,4 +1458,5 @@
     border: none;
     background-color: crimson;
     color: white;
+    z-index: 4567865434332456783;
 }
