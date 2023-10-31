@@ -6,6 +6,11 @@ import { useEffect, useState } from 'react';
 
 const Home = () => {
 
+  const [IT, setIT] = useState('')
+  const [graphic, setGraphic] = useState('')
+  const [VA, setVA] = useState('')
+  const [sugg, setSugg] = useState('')
+
   const [name, setName] = useState('')
 
   const [popup, setPopup] = useState(true)
@@ -28,6 +33,33 @@ const Home = () => {
       setPopup(false)
       console.log(err)
     })
+
+     fetch('http://localhost:4000/programming')
+    .then(res => res.json())
+    .then(data => {
+      setIT(data[0].img)
+      console.log(data)
+    })
+    .catch(err => console.log(`coaght error${err}`))
+
+    fetch('http://localhost:4000/graphics')
+    .then(res => res.json())
+    .then(data => {
+      setGraphic(data[0].img)
+      console.log(data)
+    })
+    .catch(err => console.log(`coaght error${err}`))
+    
+    fetch('http://localhost:4000/visualarts')
+    .then(res => res.json())
+    .then(data => {
+      setVA(data[3].img)
+      setSugg(data[4].img)
+      console.log(data)
+    })
+    .catch(err => console.log(`coaght error${err}`))
+    
+
 
   },[name])
 
@@ -144,7 +176,7 @@ const Home = () => {
 
         <section className="IT main">
           <div className="IT-1 main-1">
-            <img src="public/_.gif"/>
+            <img src={IT}/>
           </div>
           <div className="IT-2 main-2">
             <h1>Learn I.T</h1>
@@ -192,13 +224,13 @@ const Home = () => {
             </Link>
           </div>
           <div className="graphic-1">
-            <img src="public/REALITY IN MOTION POSTER.gif"/>
+            <img src={graphic}/>
           </div>
         </section>
 
         <section className="VA main">
           <div className="VA-1 main-1">
-            <img src="public/Kids See Ghosts - We All See Ghosts.jpeg"/>
+            <img src={VA}/>
           </div>
           <div className="VA-2 main-2">
             <h1>Learn Visual Artist</h1>
@@ -243,22 +275,19 @@ const Home = () => {
         {/* <!-- Suggestions Start --> */}
 
         <section className="addBox">
-          <img src="public/Psychics in San Diego_  Who are the Best Psychics and Mediums in San Diego_ - Famous Psychic Mediums.jpeg" width="100%" height="100%" id="suggImg" />
+          <img src={sugg} width="60%" height="40%" id="suggImg" />
           <div id="suggADD">
             <h1>Suggestions!?</h1>
             <h3>
               Wanna help people with your own personal suggestion? <br /> Soon That Will Be Possible!!!{" "}
             </h3>
-             <Link to={"/suggestion"}>
-              <button>Just Click here</button>
-            </Link>
+
           </div>
         </section>
 
         <hr/>
 
         <section className="upcoming">
-          <img src="public/Meeting Customizable Isometric Illustrations _ Amico Style.jpeg" alt="img" width="70%" height="80%" />
           <h1>MEET!</h1>
           <h3>
             Platform for you to talk to our fellow subscribers <br /> and our
@@ -283,7 +312,7 @@ const Home = () => {
         }
         <Link to='/profile'>
             <button className="profileButton" title="Profile">
-                    <svg fill="#ffffff" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M2,21H8a1,1,0,0,0,0-2H3.071A7.011,7.011,0,0,1,10,13a5.044,5.044,0,1,0-3.377-1.337A9.01,9.01,0,0,0,1,20,1,1,0,0,0,2,21ZM10,5A3,3,0,1,1,7,8,3,3,0,0,1,10,5ZM20.207,9.293a1,1,0,0,0-1.414,0l-6.25,6.25a1.011,1.011,0,0,0-.241.391l-1.25,3.75A1,1,0,0,0,12,21a1.014,1.014,0,0,0,.316-.051l3.75-1.25a1,1,0,0,0,.391-.242l6.25-6.25a1,1,0,0,0,0-1.414Zm-5,8.583-1.629.543.543-1.629L19.5,11.414,20.586,12.5Z"></path></g></svg>
+                    <svg fill="#ffffff" width="100%" height="100%" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" ><g id="SVGRepo_bgCarrier"></g><g id="SVGRepo_tracerCarrier" ></g><g id="SVGRepo_iconCarrier"><path d="M2,21H8a1,1,0,0,0,0-2H3.071A7.011,7.011,0,0,1,10,13a5.044,5.044,0,1,0-3.377-1.337A9.01,9.01,0,0,0,1,20,1,1,0,0,0,2,21ZM10,5A3,3,0,1,1,7,8,3,3,0,0,1,10,5ZM20.207,9.293a1,1,0,0,0-1.414,0l-6.25,6.25a1.011,1.011,0,0,0-.241.391l-1.25,3.75A1,1,0,0,0,12,21a1.014,1.014,0,0,0,.316-.051l3.75-1.25a1,1,0,0,0,.391-.242l6.25-6.25a1,1,0,0,0,0-1.414Zm-5,8.583-1.629.543.543-1.629L19.5,11.414,20.586,12.5Z"></path></g></svg>
             </button>
         </Link>
       </div>
