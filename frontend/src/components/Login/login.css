@@ -402,13 +402,14 @@
     font-family: Arial;
 }
 
-.pop-inputs {
-    margin-top: 8px;
+.loginInputs {
+    margin-top: 30px;
     padding: 10px;
 }
 
-.pop-inputs div {
+.loginInputs div {
     /* width: 100%; */
+    margin-top: 30px;
     color: rgb(0, 0, 0);
     font-weight: 600;
     /* padding: 10px; */

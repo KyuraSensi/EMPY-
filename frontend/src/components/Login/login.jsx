@@ -1,65 +1,76 @@
+/* eslint-disable react/no-unknown-property */
 import { useState } from "react";
-import "./signup.css";
+import "./login.css";
 import axios from "axios";
 import { Link, useNavigate } from 'react-router-dom'
 // import { Link } from "react-router-dom";
 
-const Signup = () => {
-  const [username, setUsername] = useState();
-  const [age, setAge] = useState();
+const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
-  // const [data, setData] = useState();
   
   const navigate = useNavigate()
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(username)
-    console.log(age)
     console.log(email)
     console.log(password)
 
-    axios
-    .post("http://localhost:4000/users", { username, age, email, password })
+     axios
+    .post("http://localhost:4000/login", { email, password })
     .then((result) => {
       console.log(result)
-      navigate('/login')
+      if(result.data == "Correct Password") {
+        console.log(result.data)
+        alert("Correct Password")
+        setEmail('')
+        setPassword('')
+        navigate('/')
+      } else if (result.data == "Wrong Password"){
+        alert("Wrong Password")
+      } else {
+        alert("User doesn't exist")
+      }
     })
     .catch((err) => console.log(err));
+      
 
-    //  axios
-    // .post("http://localhost:4000/login", { username, age, email, password })
-    // .then((result) => {
-    //   console.log(result)
-    //   if(result.data) {
-    //     console.log(result.data)
-    //     alert("correct")
-    //   } else {
-    //     alert("wrong")
-    //   }
-    // })
-    // .catch((err) => console.log(err));
-      
-      
-    setUsername('')
-    setAge('')
-    setEmail('')
-    setPassword('')
     
     
   };
   
-  // fetch('')
-  //   .then(res => res.json())
-  //   .then(data => setData(data))
-  //   .catch(err => console.log(err))
-  
     return (
       <>
-       {/* <!-- Bubble Start --> */}
+       <nav className="navbar">
+        
 
+        <div className="navBtn nav-mid">
+
+          <Link to={'/'} className='Link'>
+            <h1 className="box logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="stars"
+                width="15"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z" />
+              </svg>
+              EMPY?
+            </h1>
+          </Link>  
+
+        </div>
+
+
+      </nav>
+
+      {/* <!-- Navbar End--> */}
+
+
+       {/* <!-- Bubble Start --> */}
       <div className="bubles buble-about-1"></div>
       <div className="bubles buble-about-2"></div>
       <div className="bubles buble-about-3"></div>
@@ -79,37 +90,10 @@ const Signup = () => {
         <div className="popup">
           <div id="pop-flex">
             <div id="pop-h">
-              <h1>Sign Up</h1>
+              <h1>Login</h1>
             </div>
           </div>
-          <form onSubmit={handleSubmit} className="pop-inputs" method="get">
-            <div>
-              <label>Username:</label>
-              <input
-                name="name"
-                autoComplete="none"
-                id="username"
-                value={username}
-                type="text"
-                autoCorrect="hidden"
-                required
-                onChange={(e) => setUsername(e.target.value)}
-              />
-            </div>
-            <div>
-              <label>Age:</label>
-              <input
-                name="age"
-                id="age"
-                type="number"
-                min="8"
-                max="100"
-                autoComplete="none"
-                value={age}
-                required
-                onChange={(e) => setAge(e.target.value)}
-              />
-            </div>
+          <form onSubmit={handleSubmit} className="pop-inputs loginInputs" method="get">
             <br />
             <div>
               <label>Email:</label>
@@ -141,16 +125,10 @@ const Signup = () => {
                 Submit
               </button>
             </div>
-             <Link to='/login' id="login">
-              <p>Already have an <i>account?</i></p>
+             <Link to='/signup' id="login">
+              <p>Do not have an <i>account?</i></p>
              </Link>
             <br/>
-           
-           <div>
-              {/* {data.map((index) => {
-                <p>{index.name}</p>
-              })} */}
-            </div>
           </form>
         </div>
       </div>
@@ -158,4 +136,4 @@ const Signup = () => {
       );
 };
 
-export default Signup;
+export default Login;

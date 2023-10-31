@@ -211,7 +211,6 @@
 }
 
 .search:focus {
-  /* border-radius: 1; */
   left: 0;
   width: 10vw;
   z-index: 111;
@@ -222,8 +221,6 @@
 .searchBtn {
   max-width: 55px;
   min-width: 40px;
-  /* height: 28px; */
-  /* padding-bottom: 10px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <div className="navBtn nav-mid">
 
-          <Link to={'/home'} className='Link'>
+          <Link to={'/'} className='Link'>
             <h1 className="box logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ const Navbar = () => {
             { search 
             ?
               <div className="searchPop">
-                <Link to="/suggestion">
+                <Link to="/suggestion/#programming">
                   <p>
 <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="20px" viewBox="0 0 412.996 412.996" xml:space="preserve">
 <g>
@@ -92,8 +92,11 @@ const Navbar = () => {
 		</g>
 	</g>
 </g>
-</svg>Informtion Technology</p>
-                  <p>
+</svg>Programming</p>
+
+
+                  <Link to="/suggestion/#graphic">
+                    <p>
 <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="20px" viewBox="0 0 32 32" xml:space="preserve">
 {/* <style type="text/css">
 	.blueprint_een{fill:#111918;}
@@ -105,7 +108,10 @@ const Navbar = () => {
 	h10L16,14z M17,14.707L19.293,17H17V14.707z M20.146,16.439l-2.586-2.586L27,4.414L29.586,7L20.146,16.439z M2,26V6h22l-2,2H10v16
 	h19V9l1-1v18H2z"/>
 </svg>Graphic Designing</p>
-                  <p>
+                    </Link>
+                  
+        <Link to='/suggestion/#visual'>
+   <p>
 <svg width="40px" height="20px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" id="GUIDE" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <g>
@@ -127,6 +133,9 @@ const Navbar = () => {
 </g>
 
 </svg>Visual Art</p>
+</Link>
+                  
+<Link to='/suggestion' >
                   <p>
 <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="20px" viewBox="0 0 32 32" xml:space="preserve">
 {/* <style type="text/css">
@@ -135,6 +144,7 @@ const Navbar = () => {
 <path className="blueprint_een" d="M12,0L4,8v24h24V0H12z M12,8H6.828l5.176-5.176L12,8z M26,30H6V9h7V2h13V30z M10,16v4h4v4h4v-4
 	h4v-4h-4v-4h-4v4H10z M15,17v-4h2v4h4v2h-4v4h-2v-4h-4v-2H15z"/>
 </svg>Create subject...</p>
+                  </Link>
                   <Link to='/about'>
                     <p>
 <svg width="40px" height="20px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -146,8 +156,12 @@ const Navbar = () => {
 </path>
         </g>
     </g>
-</svg>About</p>
-                    <p>
+</svg> 
+
+About</p>
+</Link>
+                  <Link to='/about/#feed'>
+                  <p>
 <svg width="40px" height="20px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_901_991)">
 <path d="M9 17.0001H15M9 9.0001H23M9 13.0001H23M22 23.004C22 23.004 28 29.006 29 30.006C30.609 31.616 31 31.008 31 30.008V2.008C31 1.456 30.553 1 30 1H2C1.447 1 1 1.456 1 2.008V24.008C1 24.561 1.447 25 2 25H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -158,8 +172,8 @@ const Navbar = () => {
 </clipPath>
 </defs>
 </svg>Send Feedback</p>
-                  </Link>
-                  <Link to='/'>
+                  </Link>  
+                  <Link to='/signup'>
                     <p>
 <svg width="40px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <title>i</title>
@@ -174,6 +188,7 @@ const Navbar = () => {
     </g>
   </g>
 </svg>Signup</p>
+          <Link to='/login'>
                     <p>
 <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="20px" viewBox="0 0 92 92" enable-background="new 0 0 92 92" xml:space="preserve">
 <path id="XMLID_1277_" d="M62.3,55.5c7.7,0,14-6.3,14-14c0-7.7-6.3-14-14-14s-14,6.3-14,14C48.3,49.2,54.6,55.5,62.3,55.5z
@@ -184,6 +199,7 @@ const Navbar = () => {
 	c-4.3-4.2-11.7-7-14.6-8c-0.6-0.2-1.3-0.2-2,0l-5.1,1.8l-5.1-1.8c-0.6-0.2-1.3-0.1-2,0.1C51.9,58.9,42.5,62,38.9,68H8V24z M47.7,68
 	c2.3-2,5.3-3,8.5-4.2l5.1,1.8c0.6,0.2,1.4,0.2,2,0l5.1-1.7c3.2,1.2,6.2,2.2,8.5,4.2H47.7z"/>
 </svg>Login</p>
+          </Link>
                   </Link>
                 </Link>
                 <button id="cencel" onClick={() => handleCanSearch()}>Cancel search</button>
@@ -194,7 +210,7 @@ const Navbar = () => {
             <div></div>
             }
             {/* <!-- Search Pop-up End --> */}
-            <Link to={"/"}>
+            <Link to={"/signup"}>
               <button className="box join-us">Sign up/Login</button>
             </Link>
 
