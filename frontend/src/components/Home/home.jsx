@@ -37,7 +37,7 @@ const Home = () => {
      fetch('http://localhost:4000/programming')
     .then(res => res.json())
     .then(data => {
-      setIT(data[0].img)
+      setIT(data[1].img)
       console.log(data)
     })
     .catch(err => console.log(`coaght error${err}`))
@@ -45,7 +45,7 @@ const Home = () => {
     fetch('http://localhost:4000/graphics')
     .then(res => res.json())
     .then(data => {
-      setGraphic(data[0].img)
+      setGraphic(data[5].img)
       console.log(data)
     })
     .catch(err => console.log(`coaght error${err}`))
@@ -53,8 +53,8 @@ const Home = () => {
     fetch('http://localhost:4000/visualarts')
     .then(res => res.json())
     .then(data => {
-      setVA(data[3].img)
-      setSugg(data[4].img)
+      setVA(data[4].img)
+      setSugg(data[3].img)
       console.log(data)
     })
     .catch(err => console.log(`coaght error${err}`))

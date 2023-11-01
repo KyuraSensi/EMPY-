@@ -6,8 +6,14 @@ import { Link, useNavigate } from 'react-router-dom'
 // import { Link } from "react-router-dom";
 
 const Login = () => {
+
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+
+  // If theres an error
+
+  const [wrongPass, setWrongPass] = useState(false)
+  const [noUser, setNoUser] = useState(false)
   
   const navigate = useNavigate()
 
@@ -22,14 +28,15 @@ const Login = () => {
       console.log(result)
       if(result.data == "Correct Password") {
         console.log(result.data)
-        alert("Correct Password")
         setEmail('')
         setPassword('')
+        setNoUser(false)
+        setWrongPass(false)
         navigate('/')
       } else if (result.data == "Wrong Password"){
-        alert("Wrong Password")
+        setWrongPass(true)
       } else {
-        alert("User doesn't exist")
+        setNoUser(true)
       }
     })
     .catch((err) => console.log(err));
@@ -107,6 +114,8 @@ const Login = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
+
+
             <br />
             <div>
               <label>Password:</label>
@@ -118,8 +127,10 @@ const Login = () => {
                 minLength='8'
                 required
                 onChange={(e) => setPassword(e.target.value)}
-              />
+                />
             </div>
+
+
             <div className="pop-sub-cont">
               <button id="pop-sub" type="submit">
                 Submit
@@ -131,9 +142,11 @@ const Login = () => {
             <br/>
           </form>
         </div>
+        {noUser ? <div className="wrongEmail"><h3>Email Does Not Exist</h3></div> : ''}
+        {wrongPass ? <div className="wrongPassword"><h3>Incorrect Password</h3></div> : ''}
       </div>
     </>
       );
-};
-
+    };
+    
 export default Login;

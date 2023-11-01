@@ -16,7 +16,7 @@
     /* border: 1px solid black; */
     /* box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.396); */
     background-color: #00beef;
-    height: 29.5vw;
+    height: 31vw;
 }
 .profilePopUp:hover {
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.396);
@@ -29,6 +29,13 @@
     text-align: center;
     color: white;
     margin-top: -49px;
+}
+
+.profileTitle{
+    margin: 0;
+    /* margin-top: -16px; */
+    padding: 0;
+    font-size: 35px;
 }
 
 .profileH1{
@@ -91,7 +98,7 @@
     color: rgb(255, 255, 255);
     font-size: 23px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 3vw;
+    margin-top: 1.5vw;
 }
 
 .profileBtn{

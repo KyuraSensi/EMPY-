@@ -51,11 +51,6 @@ const Signup = () => {
     
   };
   
-  // fetch('')
-  //   .then(res => res.json())
-  //   .then(data => setData(data))
-  //   .catch(err => console.log(err))
-  
     return (
       <>
        {/* <!-- Bubble Start --> */}
