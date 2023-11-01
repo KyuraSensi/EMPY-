@@ -8,23 +8,26 @@ const Suggestion = () => {
   const [visual, setVisual] = useState([])
   const [graphics, setGraphics] = useState([])
 
-  const [loader, setLoader] = useState(true)
+  const [loader, setLoader] = useState(false)
 
   useEffect(()=>{
+
+    setLoader(true)
 
     fetch('http://localhost:4000/programming')
     .then(res => res.json())
     .then(data => {
       setProgramming(data)
+      setLoader(false)
       console.log(data)
     })
-    // .then(ddt => console.log(ddt))
     .catch(err => console.log(`coaght error${err}`))
     
     fetch('http://localhost:4000/visualarts')
     .then(res => res.json())
     .then(data => {
       setVisual(data)
+      // setLoader(false)
       console.log(data)
     })
     .catch(err => console.log(`coaght error${err}`))
@@ -33,24 +36,16 @@ const Suggestion = () => {
     .then(res => res.json())
     .then(data => {
       setGraphics(data)
+      // setLoader(false)
       console.log(data)
     })
     .catch(err => console.log(`coaght error${err}`))
 
-    setLoader(false);
 
   },[])
 
   return (
     <>
-      { 
-      loader 
-      
-      ?
-      
-      <div>Loading....</div>
-      
-      :  
       
       <div>
 
@@ -81,6 +76,23 @@ const Suggestion = () => {
 
             <div className="suggCont">
               <h1 id='programming'>Programming:</h1>
+              { 
+              loader 
+      
+              ?
+      
+              <h3 className="Loader">
+                <div className="loaderbubles3"></div>                
+                <div className="loaderbubles2"></div>
+                <div className="loaderbubles"></div>
+                  Loading....
+                <div className="loaderbubles"></div>
+                <div className="loaderbubles2"></div>      
+                <div className="loaderbubles3"></div>                
+              </h3>
+      
+              :  
+              
               <div className="suggBox resultsHere">
                 { programming.map((item)=>(
                   
@@ -101,6 +113,7 @@ const Suggestion = () => {
 
                 ))}
               </div>
+                }
             </div>
 
             {/* <!-- Programming section end --> */}
@@ -109,6 +122,23 @@ const Suggestion = () => {
 
             <div className="suggCont">
               <h1 id='graphic'>Graphic Designing:</h1>
+
+              { 
+              loader 
+      
+              ?
+      
+              <h3 className="Loader">
+                <div className="loaderbubles3"></div>                
+                <div className="loaderbubles2"></div>
+                <div className="loaderbubles"></div>
+                  Loading....
+                <div className="loaderbubles"></div>
+                <div className="loaderbubles2"></div>      
+                <div className="loaderbubles3"></div>                
+              </h3>
+      
+              :  
               <div className="suggBox resultsHere2">
                 { graphics.map((item)=>(
 
@@ -129,6 +159,7 @@ const Suggestion = () => {
                       
                 ))}
               </div>
+              }
             </div>
 
             {/* <!-- GD section end --> */}
@@ -137,6 +168,24 @@ const Suggestion = () => {
 
             <div className="suggCont">
               <h1 id='visual'>Visual Art:</h1>
+
+              { 
+              loader 
+      
+              ?
+      
+              <h3 className="Loader">
+                <div className="loaderbubles3"></div>                
+                <div className="loaderbubles2"></div>
+                <div className="loaderbubles"></div>
+                  Loading....
+                <div className="loaderbubles"></div>
+                <div className="loaderbubles2"></div>      
+                <div className="loaderbubles3"></div>                
+              </h3>
+      
+              :  
+
               <div className="suggBox resultsHere3">
                 { visual.map((item)=>(
 
@@ -157,6 +206,7 @@ const Suggestion = () => {
                       
                 ))}
               </div>
+              }
             </div>
 
             {/* <!-- VA section end --> */}
@@ -166,8 +216,6 @@ const Suggestion = () => {
         </main>
 
       </div>  
-    
-    }
 
         <Link to='/profile'>
             <button className="profileButton" title="Profile">

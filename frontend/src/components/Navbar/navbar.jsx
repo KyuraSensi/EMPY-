@@ -66,7 +66,7 @@ const Navbar = () => {
             { search 
             ?
               <div className="searchPop">
-                <Link to="/suggestion/#programming">
+                <Link to="/suggestion">
                   <p>
 <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="20px" viewBox="0 0 412.996 412.996" xml:space="preserve">
 <g>
@@ -95,7 +95,7 @@ const Navbar = () => {
 </svg>Programming</p>
 
 
-                  <Link to="/suggestion/#graphic">
+                  <Link to="/suggestion">
                     <p>
 <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="20px" viewBox="0 0 32 32" xml:space="preserve">
 {/* <style type="text/css">
@@ -110,7 +110,7 @@ const Navbar = () => {
 </svg>Graphic Designing</p>
                     </Link>
                   
-        <Link to='/suggestion/#visual'>
+        <Link to='/suggestion'>
    <p>
 <svg width="40px" height="20px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" id="GUIDE" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -160,7 +160,7 @@ const Navbar = () => {
 
 About</p>
 </Link>
-                  <Link to='/about/#feed'>
+                  <Link to='/about'>
                   <p>
 <svg width="40px" height="20px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_901_991)">

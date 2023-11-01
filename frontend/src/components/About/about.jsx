@@ -12,81 +12,78 @@ const About = () => {
  const [comments, setComments] = useState('');
  const [name, setName] = useState('')
  const [email, setEmail] = useState('')
- const [reload, setReload] = useState(true)
  const [display, setDisplay] = useState([]);
+
+ const [loading, setLoading] = useState(false);
  
  
- const handleComment = (e) => {
+ const handleComment = () => {
  
-   e.preventDefault()
+  //  e.preventDefault()
 
      axios
      .post("http://localhost:4000/comments", { user:name, comments })
      .then(result => {
-       setComments('')      
+       setComments('')
        console.log(result)
        setDisplay([...display,{user,comments,_id : crypto.randomUUID()}])
      })
-     .catch(err => console.log(err))
-     
-     emailjs.sendForm(
-       'service_ln4tzfu',
-       'template_7jtzzkh',
-       form.current,
-       'cg1tDmBLgyDdfXfmh'
-       ).then(email => {
-         console.log(email + " " + 'Sent!!')
-       })
-       .catch(err => {
-         console.log(err)
-       })
-     
+     .catch(err => console.log(err))     
      console.log(comments)
-   }
- 
- useEffect(()=>{
-   fetch('http://localhost:4000/comments')
-   .then(res => res.json())
-   .then(data => {
-     setDisplay(data)
-     console.log(data)
-   })
+    }
+    
+    useEffect(()=>{
+      
+      setLoading(true)
+      emailjs.sendForm(
+        'service_ln4tzfu',
+        'template_7jtzzkh',
+        form.current,
+        'cg1tDmBLgyDdfXfmh'
+        ).then(email => {
+          console.log(email + " " + 'Sent!!')
+        })
+        .catch(err => {
+          console.log(err)
+        })
+        
+     fetch('http://localhost:4000/comments')
+     .then(res => res.json())
+      .then(data => { 
+        console.log(data)
+        setDisplay(data)
+        setLoading(false);
+      })
    .catch(err=>console.log(err))
-
-  fetch('http://localhost:4000/users')
-  .then(res => res.json())
-  .then(data => setName(data[data.length -1].username))
-  .catch(err=>console.log(err))
-  
-  fetch('http://localhost:4000/users')
-  .then(res => res.json())
-  .then(data => setEmail(data[data.length -1].email))
-  .catch(err=>console.log(err))
- },[])
+   
+   fetch('http://localhost:4000/users')
+   .then(res => res.json())
+   .then(data => setName(data[data.length -1].username))
+   .catch(err=>console.log(err))
+   
+   fetch('http://localhost:4000/users')
+   .then(res => res.json())
+   .then(data => setEmail(data[data.length -1].email))
+   .catch(err=>console.log(err))
+   
+  },[])
   
   const handleDelete = (id) => {
+    setLoading(true)
+
     axios.delete('http://localhost:4000/delete/' + id)
     .then(result => {
-      console.log(result.data)
       let res = display.filter((item)=>item._id !== id)
       setDisplay(res)
+      console.log(result.data)
     })
     .catch(err => {
       console.log(err)
     })
+
+    setLoading(false)
   }
-  
-  const handleEdit = (id) => {
-    axios.put('http://localhost:4000/update/' + id)
-    .then(result => {
-      console.log(result)
-    })
-    .catch(err => {
-      console.log(err)
-    })
-  }
-  
-  
+
   return (
     <>
         <main>
@@ -211,7 +208,7 @@ const About = () => {
                   onChange={(e)=> setComments(e.target.value)}
                 />
                 <br />
-                <button onClick={() => setReload(!reload)} type="submit">Submit</button> 
+                <button type="submit">Submit</button> 
                 <br/>
                 <br/>
 
@@ -219,8 +216,12 @@ const About = () => {
                 
               </form>
                 <br/>
-              {  
-               
+
+                { loading
+                ?
+                <h3 className="Loader">Loading...</h3>
+                :
+              <div> { 
               display.map((item)=>(
                  <div className='commentsBox' key={item._id}>
                   <div className='comments'>
@@ -247,12 +248,14 @@ const About = () => {
                     </div>
 
                     <div className="mentsBtns">
-                      <div className='checkbox' title='Edit' onClick={() => handleEdit(item._id)}><img src='public/pencil.png' height='50%' width='50%'/></div>                     
+                      {/* <div className='checkbox' title='Edit' onClick={() => handleEdit(item._id)}><img src='public/pencil.png' height='50%' width='50%'/></div>                      */}
                       <button title='DELETE' onClick={() => handleDelete(item._id)}><img src='public/bin.png' height='50%' width='50%'/></button>
                     </div>
                   </div>
                 </div>
               ))
+              
+              }</div>
               
               }
                 <br/>
