@@ -23,7 +23,7 @@ const Login = () => {
     console.log(password)
 
      axios
-    .post("http://localhost:4000/login", { email, password })
+    .post("https://kyu-server-fb54c82d9f3c.herokuapp.com/login", { email, password })
     .then((result) => {
       console.log(result)
       if(result.data == "Correct Password") {

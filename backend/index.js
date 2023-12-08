@@ -7,7 +7,6 @@
  const VisualModule = require("./modules/VisualModule");
  const GraphicModule = require("./modules/GraphicsModules");
  const bcrypt = require("bcrypt");
- const jwt = require("jsonwebtoken");
  const env = require("dotenv").config();
  const app = express()
  
@@ -25,17 +24,27 @@
  // user
 
  app.post("/users", (req, res) => {
-  const {username, age, email, password} = req.body;
+   const { username, age, email, password } = req.body;
 
-  bcrypt
-  .hash(password, 10)
-  .then((hash) => {
-    UsersModule.create({ username, age, email, password:hash })
-      .then((users) => () => res.json(users))
-      .catch((err) => res.json(err));
-   })
-   .catch((err) => console.log(err))
-  })
+   bcrypt
+     .hash(password, 10)
+     .then((hash) => {
+       UsersModule.create({ username, age, email, password: hash })
+         .then((users) => () => res.json(users))
+         .catch((err) => res.json(err));
+     })
+     .catch((err) => console.log(err));
+
+   // Create token
+  //  const token = jwt.sign({ user_id: Users._id, email }, process.env.TOKEN_KEY, {
+  //    expiresIn: "2h",
+  //  });
+   // save Users token
+  //  Users.token = token;
+
+   // return new Users
+   res.status(201).json(Users);
+ })
 
  // login
 
@@ -137,17 +146,6 @@ app.delete("/logout/:id", (req, res) => {
 
  
 // Update
-
-// app.put("/update/:id", (req, res) => {
-//   const { id } = req.params;
-//   console.log(id);
-
-//   CommentModule.findByIdAndUpdate({ _id: id }, { done: true })
-//     .then((result) => res.json(result))
-//     .catch((err) => res.json(err));
-// });
-
-// app.put("/users", async (req, res) => {
   app.put("/users/:id", async (req, res) => {
   const { id } = req.params;
   const { newUsername, newEmail, newPassword, newAge } = req.body;
@@ -163,6 +161,8 @@ app.delete("/logout/:id", (req, res) => {
       },
       { new: false }
     );
+
+    
     res.json(user);
   } catch (error) {
     console.error(error);

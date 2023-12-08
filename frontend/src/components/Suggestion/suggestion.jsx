@@ -14,7 +14,7 @@ const Suggestion = () => {
 
     setLoader(true)
 
-    fetch('http://localhost:4000/programming')
+    fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/programming')
     .then(res => res.json())
     .then(data => {
       setProgramming(data)
@@ -23,7 +23,7 @@ const Suggestion = () => {
     })
     .catch(err => console.log(`coaght error${err}`))
     
-    fetch('http://localhost:4000/visualarts')
+    fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/visualarts')
     .then(res => res.json())
     .then(data => {
       setVisual(data)
@@ -32,7 +32,7 @@ const Suggestion = () => {
     })
     .catch(err => console.log(`coaght error${err}`))
     
-    fetch('http://localhost:4000/graphics')
+    fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/graphics')
     .then(res => res.json())
     .then(data => {
       setGraphics(data)

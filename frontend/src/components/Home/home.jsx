@@ -18,7 +18,7 @@ const Home = () => {
   const [suggestion, setSuggestion] = useState('')
 
   useEffect(()=>{
-    fetch('http://localhost:4000/users')
+    fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/users')
     .then(res => res.json())
     .then(data => setName(data[data.length -1].username))
     .catch(err=>console.log(err))
@@ -34,7 +34,7 @@ const Home = () => {
       console.log(err)
     })
 
-     fetch('http://localhost:4000/programming')
+     fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/programming')
     .then(res => res.json())
     .then(data => {
       setIT(data[1].img)
@@ -42,7 +42,7 @@ const Home = () => {
     })
     .catch(err => console.log(`coaght error${err}`))
 
-    fetch('http://localhost:4000/graphics')
+    fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/graphics')
     .then(res => res.json())
     .then(data => {
       setGraphic(data[5].img)
@@ -50,7 +50,7 @@ const Home = () => {
     })
     .catch(err => console.log(`coaght error${err}`))
     
-    fetch('http://localhost:4000/visualarts')
+    fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/visualarts')
     .then(res => res.json())
     .then(data => {
       setVA(data[4].img)
