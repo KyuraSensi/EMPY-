@@ -25,7 +25,7 @@ const Profile = () => {
     const [update, setUpdate] = useState(true);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/users')
+        fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/users')
         .then(res => res.json())
         .then(data => {
             setName(data[data.length -1].username)
@@ -45,7 +45,7 @@ const Profile = () => {
 
     function handleEdit(id) {
 
-        axios.put(`http://localhost:4000/users/${id}`, {
+        axios.put(`https://kyu-server-fb54c82d9f3c.herokuapp.com/users/${id}`, {
                 newUsername,
                 newEmail,
                 newPassword,

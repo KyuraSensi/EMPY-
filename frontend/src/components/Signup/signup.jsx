@@ -22,25 +22,12 @@ const Signup = () => {
     console.log(password)
 
     axios
-    .post("http://localhost:4000/users", { username, age, email, password })
+    .post("https://kyu-server-fb54c82d9f3c.herokuapp.com/users", { username, age, email, password })
     .then((result) => {
       console.log(result)
       navigate('/login')
     })
     .catch((err) => console.log(err));
-
-    //  axios
-    // .post("http://localhost:4000/login", { username, age, email, password })
-    // .then((result) => {
-    //   console.log(result)
-    //   if(result.data) {
-    //     console.log(result.data)
-    //     alert("correct")
-    //   } else {
-    //     alert("wrong")
-    //   }
-    // })
-    // .catch((err) => console.log(err));
       
       
     setUsername('')

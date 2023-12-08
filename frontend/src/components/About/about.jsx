@@ -22,7 +22,7 @@ const About = () => {
   //  e.preventDefault()
 
      axios
-     .post("http://localhost:4000/comments", { user:name, comments })
+     .post("https://kyu-server-fb54c82d9f3c.herokuapp.com/comments", { user:name, comments })
      .then(result => {
        setComments('')
        console.log(result)
@@ -47,7 +47,7 @@ const About = () => {
           console.log(err)
         })
         
-     fetch('http://localhost:4000/comments')
+     fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/comments')
      .then(res => res.json())
       .then(data => { 
         console.log(data)
@@ -56,12 +56,12 @@ const About = () => {
       })
    .catch(err=>console.log(err))
    
-   fetch('http://localhost:4000/users')
+   fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/users')
    .then(res => res.json())
    .then(data => setName(data[data.length -1].username))
    .catch(err=>console.log(err))
    
-   fetch('http://localhost:4000/users')
+   fetch('https://kyu-server-fb54c82d9f3c.herokuapp.com/users')
    .then(res => res.json())
    .then(data => setEmail(data[data.length -1].email))
    .catch(err=>console.log(err))
@@ -71,7 +71,7 @@ const About = () => {
   const handleDelete = (id) => {
     setLoading(true)
 
-    axios.delete('http://localhost:4000/delete/' + id)
+    axios.delete('https://kyu-server-fb54c82d9f3c.herokuapp.com/delete/' + id)
     .then(result => {
       let res = display.filter((item)=>item._id !== id)
       setDisplay(res)
