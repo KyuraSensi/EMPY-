@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Link } from 'react-router-dom';
 import './navbar.css'
+import 'animate.css';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -34,10 +35,10 @@ const Navbar = () => {
         <div className="navBtn nav-mid">
 
           <Link to={'/'} className='Link'>
-            <h1 className="box logo">
+            <h1 className="box logo animate__animated animate__rubberBand animate__delay-5s animate__slow	">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="stars"
+                class="stars"                
                 width="15"
                 height="16"
                 fill="currentColor"

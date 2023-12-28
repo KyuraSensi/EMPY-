@@ -1,6 +1,4 @@
 /* Navbar Start */
-
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -178,6 +176,7 @@
   font-size: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .logo::selection {
@@ -185,7 +184,7 @@
 }
 
 .stars {
-  color: #00beef;
+  color: #00beef !important;
 }
 
 .logo:hover {

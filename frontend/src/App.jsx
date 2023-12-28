@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 
 
+
 function App() {
 
   return (
@@ -14,11 +15,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/signup" element={<Signup/>}></Route>
-        <Route path="/login" element={<LoginPage/>}></Route>
-        <Route path="/profile" element={<ProfilePage/>}></Route>
-        <Route path="/about" element={<AboutPage/>}></Route>
-        <Route path="/suggestion" element={<SuggestionPage/>}></Route>
+        {/* <Route path="/signup" element={<Signup/>}></Route> */}
+        {/* <Route path="/login" element={<LoginPage/>}></Route> */}
+        {/* <Route path="/profile" element={<ProfilePage/>}></Route> */}
+        {/* <Route path="/about" element={<AboutPage/>}></Route> */}
+        {/* <Route path="/suggestion" element={<SuggestionPage/>}></Route> */}
       </Routes>
     </BrowserRouter>
     
